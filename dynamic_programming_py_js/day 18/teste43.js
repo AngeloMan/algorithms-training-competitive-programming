@@ -1,13 +1,5 @@
 var reverseKGroup = function(head, k) {
-    let mh = null;
-    let new_tail = null;
-    let last = null
-    let current = head;
-    let i = 1;
-    let next = null;
-    let test;
-    let old = null;
-    let al = true;
+    let mh = null, new_tail = null, last = null, current = head, i = 1, next = null, test,old = null, al = true;
     while (current != null){
         next = current.next;
         if (i === 1){
