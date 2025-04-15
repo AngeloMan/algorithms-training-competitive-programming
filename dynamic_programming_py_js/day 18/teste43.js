@@ -1,7 +1,3 @@
- * @param {ListNode} head
- * @param {number} k
- * @return {ListNode}
- */
 var reverseKGroup = function(head, k) {
     let mh = null;
     let new_tail = null;
