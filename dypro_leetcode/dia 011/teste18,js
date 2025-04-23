@@ -1,0 +1,13 @@
+function gridt(m, n){
+    let memo = {};
+    function calculator(i, j, memo){
+      const key = i + ',' + j;
+      if (key in memo) return memo[key];
+      if ((i === m - 1) || (j === n - 1)) return 1;
+      memo[key] = calculator(i + 1, j, memo) + calculator(i, j + 1, memo);
+      return memo[key];
+    }
+    return calculator(0, 0, memo);
+  }
+  
+  console.log(gridt(414, 622));
