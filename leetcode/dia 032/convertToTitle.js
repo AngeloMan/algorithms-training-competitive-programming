@@ -1,3 +1,4 @@
+//aceito no leetcode
 //funciona com 100% de precisão ate 17576
 var convertToTitle = function(columnNumber) {
     const dict = {
