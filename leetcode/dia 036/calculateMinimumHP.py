@@ -15,7 +15,4 @@ class Solution:
                 print(rec(i, j + 1))
                 dp[(i, j)] = min(dp[(i,j)], max(1, rec(i, j + 1) - dungeon[i][j]))
             return dp[(i, j)]
-        a = rec(0, 0)
-        if a <= 0:
-            return 1
-        return a 
+        return rec(0, 0)
