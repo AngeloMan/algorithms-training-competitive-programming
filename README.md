@@ -1,1 +1,1 @@
-leetcode: dia 006 -> dia 0__
+leetcode: dia 006 -> dia 0**
