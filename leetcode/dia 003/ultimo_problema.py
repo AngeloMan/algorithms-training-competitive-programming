@@ -6,7 +6,7 @@ def recive_data(ran = 1):
         value.append([int(x) for x in str(input()).split()])
     return value
 
-def check_trail(f, t, conections, n, x = 0, route='', routes_ = []):
+def check(f, t, conections, n, x = 0, route='', routes_ = []):
     if x < n - 1:
         for i in conections:
             if f in i:
@@ -19,7 +19,7 @@ def check_trail(f, t, conections, n, x = 0, route='', routes_ = []):
                     for k in i:
                         if k != f:
                             x+=1
-                            check_trail(k, t, n, x, route)
+                            check(k, t, n, x, route)
                     
         return routes_
     else:
@@ -41,6 +41,6 @@ if __name__ == "__main__":
     a = []
     
     for i in cases:
-        a.append(check_trail(i[0], i[1]))
+        a.append(check(i[0], i[1]))
         
     print(a)
