@@ -20,5 +20,3 @@ int main(){
 	cout << dp[s];
 
 }
-
-ann
